@@ -37,8 +37,8 @@ def main():
             similarity_scores = 1 - (distances / np.max(distances))
 
             results_df = pd.DataFrame({
-                'origin_url': origin_df['URL'],
-                'matched_url': destination_df['URL'].iloc[indices.flatten()],
+                'origin_url': origin_df['Address'],
+                'matched_url': destination_df['Address'].iloc[indices.flatten()],
                 'similarity_score': similarity_scores.flatten()
             })
 
