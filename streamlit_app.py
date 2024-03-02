@@ -36,10 +36,15 @@ def main():
             distances, indices = faiss_index.search(origin_embeddings.astype('float32'), k=1)
             similarity_scores = 1 - (distances / np.max(distances))
 
+            # Creazione delle serie per gestire lunghezze diverse
+            matched_url_series = pd.Series(destination_df['Address'].iloc[indices.flatten()].values, index=origin_df.index)
+            similarity_scores_series = pd.Series(similarity_scores.flatten(), index=origin_df.index)
+
+            # Creazione del DataFrame dei risultati
             results_df = pd.DataFrame({
                 'origin_url': origin_df['Address'],
-                'matched_url': destination_df['Address'].iloc[indices.flatten()],
-                'similarity_score': similarity_scores.flatten()
+                'matched_url': matched_url_series,
+                'similarity_score': similarity_scores_series
             })
 
             # Visualizzazione dei risultati
