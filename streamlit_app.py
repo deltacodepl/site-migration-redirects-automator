@@ -75,5 +75,14 @@ def main():
             # Visualizzazione dei risultati
             st.write(results_df)
 
+# Aggiunta dei crediti nel footer dell'applicazione
+st.markdown("""
+<footer style='text-align: center; color: gray; padding: 20px; font-size: 0.8em;'>
+    Questo strumento si basa sullo script Python originale 
+    <a href="https://colab.research.google.com/drive/1Y4msGtQf44IRzCotz8KMy0oawwZ2yIbT?usp=sharing" target="_blank">Automated Redirect Matchmaker for Site Migrations</a>
+    sviluppato da <a href="https://www.linkedin.com/in/dpe1/" target="_blank">Daniel Emery</a>.
+</footer>
+""", unsafe_allow_html=True)
+
 if __name__ == "__main__":
     main()
