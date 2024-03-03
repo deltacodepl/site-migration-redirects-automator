@@ -7,18 +7,17 @@ import numpy as np
 def main():
     st.title("Site Migration Redirects Automator v.1")
     st.markdown("""
-### Scopo e Funzionamento dello Strumento
+### Scopo e funzionamento dello strumento
 
 Questo strumento è stato sviluppato per automatizzare il processo di mappatura dei redirect durante le migrazioni dei siti web, facilitando il matching delle URL da un vecchio a un nuovo sito basandosi sulla somiglianza dei contenuti. Utilizzando tecniche all'avanguardia di elaborazione del linguaggio naturale fornite dalla libreria `sentence-transformers` e algoritmi di ricerca efficienti forniti da `faiss`, lo strumento è in grado di processare e confrontare grandi set di dati, identificando le corrispondenze più rilevanti tra le pagine del sito originale e quelle del sito di destinazione.
 
-### Istruzioni per l'Uso
+### Come utilizzarlo?
 
 1. Carica i file CSV contenenti le URL del sito originale (`origin.csv`) e del sito di destinazione (`destination.csv`) utilizzando gli appositi uploader.
 2. Seleziona le colonne rilevanti per il matching dal menù a tendina. Queste colonne possono includere titoli, descrizioni meta, intestazioni e altro contenuto significativo che contribuisce alla somiglianza dei contenuti tra le pagine.
 3. Clicca sul pulsante "Match URLs" per avviare il processo di matching.
 4. Visualizza i risultati direttamente nell'interfaccia, i quali includeranno le URL di origine, le corrispondenti URL di destinazione e i punteggi di somiglianza, evidenziando così le migliori corrispondenze trovate dall'algoritmo.
 
-Questo strumento è progettato per semplificare e velocizzare una delle fasi più critiche e laboriose delle migrazioni dei siti web, riducendo significativamente il tempo e lo sforzo necessari per eseguire manualmente la mappatura dei redirect.
 """)
 
     # Caricamento dei file CSV
