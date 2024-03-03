@@ -16,10 +16,10 @@ This Streamlit tool was developed to automate the process of redirect mapping du
 4. Click on "Run Matching" to generate the redirect mappings.
 
 ## Technologies Used
-- Streamlit
-- Pandas
-- Sentence Transformers
-- FAISS (Facebook AI Similarity Search)
+- `faiss-cpu`: A library for efficient similarity search and clustering of dense vectors.
+- `sentence-transformers`: A Python framework for state-of-the-art sentence, text, and image embeddings.
+- `pandas`: An open-source data manipulation and analysis library.
+- `ipywidgets`: An interactive widget library for Jupyter notebooks.
 
 ## Installation
 To install the necessary dependencies, run:
