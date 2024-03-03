@@ -3,6 +3,7 @@ import pandas as pd
 from sentence_transformers import SentenceTransformer
 import faiss
 import numpy as np
+from huggingface_hub import HfFolder
 
 def main():
     st.title("Site Migration Redirects Automator v.1")
@@ -30,8 +31,15 @@ def main():
     
     Questo strumento si basa sullo script Python originale [Automated Redirect Matchmaker for Site Migrations](https://colab.research.google.com/drive/1Y4msGtQf44IRzCotz8KMy0oawwZ2yIbT?usp=sharing) sviluppato da [Daniel Emery](https://www.linkedin.com/in/dpe1/), che fornisce un approccio automatizzato alla mappatura dei redirect durante le migrazioni dei siti web.
     """)
-
+    
     st.markdown("---")
+    
+    # Campo per inserire il token di Hugging Face
+    hf_token = st.text_input("Inserisci il tuo token di Hugging Face (HF_TOKEN):", type="password")
+    
+    if hf_token:
+        # Imposta il token di Hugging Face
+        HfFolder.save_token(hf_token)
 
     # Caricamento dei file CSV
     origin_file = st.file_uploader("Carica il file origin.csv", type="csv")
