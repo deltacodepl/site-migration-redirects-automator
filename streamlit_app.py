@@ -34,8 +34,8 @@ def main():
     st.markdown("---")
 
     # Caricamento dei file CSV
-    origin_file = st.file_uploader("Upload origin.csv", type="csv")
-    destination_file = st.file_uploader("Upload destination.csv", type="csv")
+    origin_file = st.file_uploader("Carica il file origin.csv", type="csv")
+    destination_file = st.file_uploader("Carica il file destination.csv", type="csv")
 
     if origin_file and destination_file:
         origin_df = pd.read_csv(origin_file)
