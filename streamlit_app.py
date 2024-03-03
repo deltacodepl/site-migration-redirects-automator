@@ -5,7 +5,7 @@ import faiss
 import numpy as np
 
 def main():
-    st.title("Site Migration Redirects Automator v.1")
+    st.title("Site Migration Redirects Automator v.1 ⚡️🔀")
     st.markdown("""
     ### Prima di Utilizzare lo Strumento
     
