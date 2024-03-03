@@ -4,8 +4,6 @@
 ## Description
 This Streamlit tool was developed to automate the process of redirect mapping during website migrations, facilitating the matching of URLs from an old to a new site based on content similarity. Using state-of-the-art natural language processing techniques provided by the `sentence-transformers` library and efficient search algorithms provided by `faiss`, the tool is able to process and compare large datasets, identifying the most relevant matches between the pages of the original site and those of the target site.
 
-Translated with DeepL.com (free version)
-
 ## Features
 - Upload CSV files for source and destination URLs
 - Automatically calculate content similarity between URLs
