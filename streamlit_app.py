@@ -5,20 +5,20 @@ import faiss
 import numpy as np
 
 def main():
-    st.title("Site Migration Redirects Automator v.1 ⚡️🔀")
+    st.title("Site Migration Redirects Automator v.1")
     st.markdown("""
-    ### Prima di Utilizzare lo Strumento
+    ##### Prima di Utilizzare lo Strumento
     
     Per garantire l'efficacia di questo strumento nella mappatura dei redirect, è essenziale preparare adeguatamente i dati di input. Questo processo inizia con l'export dei dati da Screaming Frog, uno strumento di crawling web che fornisce una panoramica dettagliata delle URL esistenti sul tuo sito web.
     
-    ##### Come Preparare i Dati con Screaming Frog
+    ##### 👉🏼 Come Preparare i Dati con Screaming Frog
     
     1. Esegui un crawl completo del tuo sito web utilizzando Screaming Frog.
     2. Filtra i risultati del crawl per includere solo le pagine HTML con codice di stato 200, assicurandoti di rimuovere URL duplicati o non necessari per la mappatura dei redirect.
     3. Esporta i risultati filtrati in un file CSV. Assicurati che il file contenga colonne per l'indirizzo URL, il titolo, la descrizione meta e altre informazioni pertinenti che desideri utilizzare per il matching.
     4. Ripeti il processo per il sito web di destinazione, eseguendo un crawl del sito in staging (o del nuovo sito) e esportando i risultati.
     
-    ##### Istruzioni per l'Uso
+    ##### 👉🏼 Istruzioni per l'Uso
     
     1. Prepara i file CSV contenenti le URL del sito originale (`origin.csv`) e del sito di destinazione (`destination.csv`) seguendo le istruzioni sopra.
     2. Carica i file CSV utilizzando gli appositi uploader.
@@ -26,7 +26,7 @@ def main():
     4. Clicca sul pulsante "Match URLs" per avviare il processo di matching.
     5. Visualizza i risultati direttamente nell'interfaccia, che includeranno le URL di origine, le corrispondenti URL di destinazione e i punteggi di somiglianza.
     
-    ##### Credits
+    ##### 👉🏼 Credits
     
     Questo strumento si basa sullo script Python originale [Automated Redirect Matchmaker for Site Migrations](https://colab.research.google.com/drive/1Y4msGtQf44IRzCotz8KMy0oawwZ2yIbT?usp=sharing) sviluppato da [Daniel Emery](https://www.linkedin.com/in/dpe1/), che fornisce un approccio automatizzato alla mappatura dei redirect durante le migrazioni dei siti web.
     """)
