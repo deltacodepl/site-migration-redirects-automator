@@ -11,8 +11,27 @@ def main():
         st.markdown("""
         <div style='font-size: 0.9em;'>
             <p><strong>Prima di Utilizzare lo Strumento</strong></p>
-            <p>Per garantire l'efficacia di questo strumento nella mappatura dei redirect...</p>
-            <!-- Includi il resto della tua descrizione qui, ridimensionando come necessario -->
+            <p>Per garantire l'efficacia di questo strumento nella mappatura dei redirect, è essenziale preparare adeguatamente i dati di input. Questo processo inizia con l'export dei dati da Screaming Frog, uno strumento di crawling web che fornisce una panoramica dettagliata delle URL esistenti sul tuo sito web.</p>
+            
+            <h4>Come Preparare i Dati con Screaming Frog</h4>
+            <ol>
+                <li>Esegui un crawl completo del tuo sito web utilizzando Screaming Frog.</li>
+                <li>Filtra i risultati del crawl per includere solo le pagine HTML con codice di stato 200, assicurandoti di rimuovere URL duplicati o non necessari per la mappatura dei redirect.</li>
+                <li>Esporta i risultati filtrati in un file CSV. Assicurati che il file contenga colonne per l'indirizzo URL, il titolo, la descrizione meta e altre informazioni pertinenti che desideri utilizzare per il matching.</li>
+                <li>Ripeti il processo per il sito web di destinazione, eseguendo un crawl del sito in staging (o del nuovo sito) e esportando i risultati.</li>
+            </ol>
+            
+            <p><strong>Scopo e Funzionamento dello Strumento</strong></p>
+            <p>Questo strumento è stato sviluppato per automatizzare il processo di mappatura dei redirect durante le migrazioni dei siti web, facilitando il matching delle URL da un vecchio a un nuovo sito basandosi sulla somiglianza dei contenuti. Utilizzando tecniche all'avanguardia di elaborazione del linguaggio naturale fornite dalla libreria <code>sentence-transformers</code> e algoritmi di ricerca efficienti forniti da <code>faiss</code>, lo strumento è in grado di processare e confrontare grandi set di dati, identificando le corrispondenze più rilevanti tra le pagine del sito originale e quelle del sito di destinazione.</p>
+            
+            <h4>Istruzioni per l'Uso</h4>
+            <ol>
+                <li>Prepara i file CSV contenenti le URL del sito originale (<code>origin.csv</code>) e del sito di destinazione (<code>destination.csv</code>) seguendo le istruzioni sopra.</li>
+                <li>Carica i file CSV utilizzando gli appositi uploader.</li>
+                <li>Seleziona le colonne rilevanti per il matching dal menù a tendina.</li>
+                <li>Clicca sul pulsante "Match URLs" per avviare il processo di matching.</li>
+                <li>Visualizza i risultati direttamente nell'interfaccia, che includeranno le URL di origine, le corrispondenti URL di destinazione e i punteggi di somiglianza.</li>
+            </ol>
         </div>
         """, unsafe_allow_html=True)
         
