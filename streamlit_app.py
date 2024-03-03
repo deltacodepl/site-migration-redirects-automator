@@ -59,7 +59,8 @@ def main():
             destination_df['combined_text'] = destination_df[selected_columns].apply(lambda row: ' '.join(row.values.astype(str)), axis=1)
 
             # Matching dei dati
-            model = SentenceTransformer('all-mpnet-base-v2')
+            model = SentenceTransformer('all-MiniLM-L6-v2')
+            # model = SentenceTransformer('all-mpnet-base-v2')
             origin_embeddings = model.encode(origin_df['combined_text'].tolist(), show_progress_bar=False)
             destination_embeddings = model.encode(destination_df['combined_text'].tolist(), show_progress_bar=False)
 
