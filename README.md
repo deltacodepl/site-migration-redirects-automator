@@ -27,6 +27,7 @@ To install the necessary dependencies, run:
 pip install -r requirements.txt
 ```
 
-## Contributing
-You are invited to contribute to the project by suggesting improvements, reporting bugs, or adding new features. To do so, you can open an issue or a pull request on the GitHub repository.
+### Credits
+    
+Questo strumento si basa sullo script Python originale [Automated Redirect Matchmaker for Site Migrations](https://colab.research.google.com/drive/1Y4msGtQf44IRzCotz8KMy0oawwZ2yIbT?usp=sharing) sviluppato da [Daniel Emery](https://www.linkedin.com/in/dpe1/), che fornisce un approccio automatizzato alla mappatura dei redirect durante le migrazioni dei siti web.
 
