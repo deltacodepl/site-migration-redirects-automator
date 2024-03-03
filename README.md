@@ -1,27 +1,27 @@
 
 # Site Migration Redirects Automator v.1
 
-## Description
+## 👉🏼 Description
 This Streamlit tool was developed to automate the process of redirect mapping during website migrations, facilitating the matching of URLs from an old to a new site based on content similarity. Using state-of-the-art natural language processing techniques provided by the `sentence-transformers` library and efficient search algorithms provided by `faiss`, the tool is able to process and compare large datasets, identifying the most relevant matches between the pages of the original site and those of the target site.
 
-## Features
+## 👉🏼 Features
 - Upload CSV files for source and destination URLs
 - Automatically calculate content similarity between URLs
 - Display recommended redirect mappings with similarity scores
 
-## How to Use
+## 👉🏼 How to Use
 1. Install all dependencies from `requirements.txt`.
 2. Start the application with Streamlit using the command `streamlit run streamlit_app.py`.
 3. Upload the source and destination CSV files through the user interface.
 4. Click on "Run Matching" to generate the redirect mappings.
 
-## Technologies Used
+## 👉🏼 Technologies Used
 - `faiss-cpu`: A library for efficient similarity search and clustering of dense vectors.
 - `sentence-transformers`: A Python framework for state-of-the-art sentence, text, and image embeddings.
 - `pandas`: An open-source data manipulation and analysis library.
 - `ipywidgets`: An interactive widget library for Jupyter notebooks.
 
-## Installation
+## 👉🏼 Installation
 To install the necessary dependencies, run:
 ```bash
 pip install -r requirements.txt
