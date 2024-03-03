@@ -5,8 +5,7 @@ import faiss
 import numpy as np
 
 def main():
-with st.container():
-    st.header("Site Migration Redirects Automator v.1")
+    st.title("Site Migration Redirects Automator v.1")
 
     st.markdown("""
     **Prima di Utilizzare lo Strumento**
@@ -75,6 +74,11 @@ with st.container():
 
             # Visualizzazione dei risultati
             st.write(results_df)
+
+    # Aggiunta dei crediti nel footer dell'applicazione
+    st.markdown("""
+    *Questo strumento si basa sullo script Python originale "Automated Redirect Matchmaker for Site Migrations" sviluppato da Daniel Emery.*
+    """, unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
