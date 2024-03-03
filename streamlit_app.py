@@ -35,6 +35,8 @@ def main():
     Questo strumento si basa sullo script Python originale [Automated Redirect Matchmaker for Site Migrations](https://colab.research.google.com/drive/1Y4msGtQf44IRzCotz8KMy0oawwZ2yIbT?usp=sharing) sviluppato da [Daniel Emery](https://www.linkedin.com/in/dpe1/), che fornisce un approccio automatizzato alla mappatura dei redirect durante le migrazioni dei siti web.
     """)
 
+    st.markdown("---")
+
     # Caricamento dei file CSV
     origin_file = st.file_uploader("Upload origin.csv", type="csv")
     destination_file = st.file_uploader("Upload destination.csv", type="csv")
