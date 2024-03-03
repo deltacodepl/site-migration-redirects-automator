@@ -5,7 +5,7 @@ import faiss
 import numpy as np
 
 def main():
-    st.title("Automated Redirect Matchmaker for Site Migrations")
+    st.title("Site Migration Redirects Automator v.1")
 
     # Caricamento dei file CSV
     origin_file = st.file_uploader("Upload origin.csv", type="csv")
