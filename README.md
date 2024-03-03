@@ -1,5 +1,5 @@
 
-# Site Migration Redirects Automator
+# Site Migration Redirects Automator v.1
 
 ## Description
 This Streamlit application automates the creation of redirect mappings for site migrations by leveraging content similarity analysis between source and destination URLs. It uses advanced natural language processing techniques and search algorithms to identify the best possible matches.
@@ -27,7 +27,7 @@ To install the necessary dependencies, run:
 pip install -r requirements.txt
 ```
 
-### Credits
+## Credits
     
 Questo strumento si basa sullo script Python originale [Automated Redirect Matchmaker for Site Migrations](https://colab.research.google.com/drive/1Y4msGtQf44IRzCotz8KMy0oawwZ2yIbT?usp=sharing) sviluppato da [Daniel Emery](https://www.linkedin.com/in/dpe1/), che fornisce un approccio automatizzato alla mappatura dei redirect durante le migrazioni dei siti web.
 
