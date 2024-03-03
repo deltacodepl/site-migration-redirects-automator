@@ -24,7 +24,7 @@ def main():
     2. Carica i file CSV utilizzando gli appositi uploader.
     3. Seleziona le colonne rilevanti per il matching dal menù a tendina.
     4. Clicca sul pulsante "Match URLs" per avviare il processo di matching.
-    5. Visualizza i risultati direttamente nell'interfaccia, che includeranno le URL di origine, le corrispondenti URL di destinazione e i punteggi di somiglianza.
+    5. Visualizza i risultati direttamente nell'interfaccia, che includeranno le URL di origine, le corrispondenti URL di destinazione e il similarity matching.
     
     ###### Credits
     
