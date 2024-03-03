@@ -31,6 +31,13 @@ def main():
     5. Visualizza i risultati direttamente nell'interfaccia, che includeranno le URL di origine, le corrispondenti URL di destinazione e i punteggi di somiglianza.
 
     """)
+    st.markdown("""
+    <footer style='text-align: center; color: gray; padding: 20px; font-size: 0.7em;'>
+        Questo strumento si basa sullo script Python originale 
+        <a href="https://colab.research.google.com/drive/1Y4msGtQf44IRzCotz8KMy0oawwZ2yIbT?usp=sharing" target="_blank">Automated Redirect Matchmaker for Site Migrations</a>
+        sviluppato da <a href="https://www.linkedin.com/in/dpe1/" target="_blank">Daniel Emery</a>.
+    </footer>
+    """, unsafe_allow_html=True)
 
     # Caricamento dei file CSV
     origin_file = st.file_uploader("Upload origin.csv", type="csv")
