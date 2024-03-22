@@ -6,7 +6,7 @@ import numpy as np
 from huggingface_hub import HfFolder
 
 def main():
-    st.title("Site Migration Redirects Automator v.1")
+    st.title("Site Migration Redirects Automator")
     st.markdown("""
     ##### Prima di Utilizzare lo Strumento
     
