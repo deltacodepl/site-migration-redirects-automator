@@ -38,8 +38,8 @@ def main():
     hf_token = st.text_input("1. Inserisci il tuo token di Hugging Face (HF_TOKEN):", type="password")
 
     # Aggiungi una nota per l'utente riguardo al token
-    st.info("""
-    Copialo o creane uno nuovo da [qui](https://huggingface.co/settings/tokens).
+    st.info(f"""
+        Copialo o creane uno nuovo da [qui](https://huggingface.co/settings/tokens).
     """)
     
     if hf_token:
