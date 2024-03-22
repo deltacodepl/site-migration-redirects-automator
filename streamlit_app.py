@@ -35,18 +35,22 @@ def main():
     st.markdown("---")
     
     # Campo per inserire il token di Hugging Face
-    hf_token = st.text_input("Inserisci il tuo token di Hugging Face (HF_TOKEN):", type="password")
+    hf_token = st.text_input("1. Inserisci il tuo token di Hugging Face (HF_TOKEN):", type="password")
 
     # Aggiungi una nota per l'utente riguardo al token
-    st.info("Copialo o creane uno nuovo da [qui](https://huggingface.co/settings/tokens).")
+    st.info("""
+    Copialo o creane uno nuovo da [qui](https://huggingface.co/settings/tokens).
+    """)
     
     if hf_token:
         # Imposta il token di Hugging Face
         HfFolder.save_token(hf_token)
 
+    st.markdown("---")
+
     # Caricamento dei file CSV
     origin_file = st.file_uploader("Carica il file origin.csv", type="csv")
-    destination_file = st.file_uploader("Carica il file destination.csv", type="csv")
+    destination_file = st.file_uploader("2. Carica il file destination.csv", type="csv")
 
     if origin_file and destination_file:
         origin_df = pd.read_csv(origin_file)
